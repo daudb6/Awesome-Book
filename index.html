@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="main-heading">Awesome</h1>
+        <div class="button-container">
+            <button class="btn add-btn" id="showbutton">title</button>
+            <button class="btn add-btn" id="form-btn">Add to Cart</button>
+            <button class="btn contact-btn" id="contact-btn">Contact</button>
+        </div>
+    </nav>
+    
+    <p class="time-display" id="time-display"></p>
+
+    <!-- Main Page Section -->
+    <div class="main" id="first">
+        <main class="content">
+            <h2 class="all-books-heading">All Awesome Books</h2>
+            <div class="book-list"></div>
+        </main>
+        <footer class="footer">
+            <textarea class="copyright" readonly>&copy; copyright ...</textarea>
+        </footer>
+    </div>
+
+    <!-- Contact Section -->
+    <main class="contact-section main" style="display: none;">
+        <h2 style="text-align: center; padding-bottom: 10px;">Contact Information</h2>
+        <div class="contact-info" style="line-height: 30px; padding: 20px;">
+            <p>Do you have any questions or want to say 'Hello'? You can reach out to us:</p>
+            <ul>
+                <li>Email: contactinfo@gmail.com</li>
+                <li>Phone: +3456850873</li>
+                <li>Address: Street 7, Township 8564, London</li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <textarea class="copyright" readonly>&copy; copyright ...</textarea>
+        </footer>
+    </main>
+
+    <!-- Form Section -->
+    <div class="main" id="form" style="display: none;">
+        <main class="content">
+            <h2 class="all-books-heading">Add a New Book</h2>
+            <form id="bookForm" class="list-data book-list">
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                <button type="submit" class="btn add">Add</button>
+            </form>
+        </main>
+        <footer class="footer">
+            <textarea class="copyright" readonly>&copy; copyright ...</textarea>
+        </footer>
+    </div>
+    
+    <script src="./book.js"></script>
+</body>
+</html>
